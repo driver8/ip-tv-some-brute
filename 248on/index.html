@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<script src="index.js"></script>
+		<link href="index.css" rel="stylesheet"></link>
+	</head>
+	<body>
+		<div class="main" style="align-self: center;">
+			<div class="control-buttons">
+
+				<label class="grey" style="text-align: right;">Перебор от</label>
+				<input id="fromInt" type="number" inputmode="numeric" min="0" max="4294967295" value="0" class="button-red input-common"/>
+				<div></div>
+				<button
+					onclick="startBrute()"
+					class="button-red input-common">
+					Начать перебор
+				</button>
+
+
+				<label class="grey" style="text-align: right;">до</label>
+				<input id="toInt" type="number" inputmode="numeric" min="0" max="4294967295" value="4294967295" class="button-red input-common" />
+				<div></div>
+				<button
+					class="button-red input-common"
+					onclick="stopBrute()">
+					Остановить перебор
+				</button>
+			</div>
+
+			<div class="control-config">
+				<label id="pauseText" class="grey" style="text-align: center;">Пауза</label>
+				<input
+					id="pause"
+					type="range"
+					inputmode="numeric" min="0" max="20" value="1"
+					class="button-red input-common"
+					oninput="pauseValueChanged"
+					style="grid-column-start:span 2;"
+				/>
+
+				<label class="grey" style="text-align: center;">Случайная пауза</label>
+				<input
+					id="randomPauseCb"
+					type="checkbox"
+					class="input-common"
+					style="align-self: center; justify-self: start;"/>
+
+			</div>
+
+			<div class="range-inputs">
+				<textarea class="area-logs input-common" readonly placeholder="# place for logs" id="logArea" rows="20"></textarea>
+			</div>
+
+			<div class="range-inputs">
+				<textarea class="area-good input-common" readonly placeholder="# proper results" id="goodArea" rows="8"></textarea>
+
+				<button
+					class="button-red input-common"
+					onclick="clearProperKeys()">
+					Очистить ключи
+				</button>
+
+
+			</div>
+
+		</div>
+
+	</body>
+</html>

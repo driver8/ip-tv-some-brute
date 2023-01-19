@@ -1,0 +1,80 @@
+body{
+	display: flex;
+	flex-flow: column nowrap;
+	font-size: 18px;
+	background-color: #adc6ed;
+	height: auto;
+}
+
+.button-red{
+	font-size: 16px;
+	color: #ddd;
+	background-color: #ed6c09;
+	border-color: #ed6c09aa;
+}
+
+.red{
+	font-size: 16px;
+	color: #ed6c09;
+}
+
+.grey{
+	font-size: 16px;
+	color: #555;
+}
+
+.input-common{
+	border-radius: 6px;
+}
+
+.main{
+	display:  flex;
+	flex-flow: column nowrap;
+	gap : 15px;
+	min-width: 760px;
+	max-width: 1000px;
+	align-self: center;
+	height: auto;
+}
+
+.range-inputs{
+	display: flex;
+	flex-flow: row nowrap;
+	gap:  15px;
+}
+
+.column-inputs{
+	display: flex;
+	flex-flow: column nowrap;
+	gap:  15px;
+}
+
+.control-buttons{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap:  10px;
+}
+
+.control-config{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap:  10px;
+}
+
+.area-logs{
+	min-height: 100px;
+	width: 100%;
+	padding:  10px 10px 10px 10px;
+	height: auto;
+	color: #0c0;
+	background-color: #000;
+}
+
+.area-good{
+	min-height: 80px;
+	width: 100%;
+	padding:  10px 10px 10px 10px;
+	height: auto;
+	color: #e52;
+	background-color: #000;
+}
